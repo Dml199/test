@@ -18,16 +18,16 @@ export default function Cell({ components }) {
         </div>
         <div id="list">
           <ul>
-            <li><img className="svg" src = {mail}></img> email: {components.email}</li>
-            <li><img className="svg" src = {globe}></img> website: {components.website}</li>
-            <li><img className="svg" src = {phone}></img> phone: {components.phone}</li>
-            <li><img className="svg" src = {phone}></img> street: {components.address.street}</li>
-            <li><img className="svg" src = {phone}></img> suite: {components.address.suite}</li>
-            <li><img className="svg" src = {phone}></img> city: {components.address.city}</li>
-            <li><img className="svg" src = {phone}></img> zipcode: {components.address.zipcode}</li>
-            <li><img className="svg" src = {phone}></img> name company: {components.company.name}</li>
-            <li><img className="svg" src = {phone}></img> catchphraze: {components.company.catchPhrase}</li>
-            <li><img className="svg" src = {phone}></img> bs: {components.company.bs}</li>
+            <li><img className="svg"  alt = "text"src = {mail}></img> email: {components.email}</li>
+            <li><img className="svg" alt = "text" src = {globe}></img> website: {components.website}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> phone: {components.phone}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> street: {components.address.street}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> suite: {components.address.suite}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> city: {components.address.city}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> zipcode: {components.address.zipcode}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> name company: {components.company.name}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> catchphraze: {components.company.catchPhrase}</li>
+            <li><img className="svg"  alt = "text"src = {phone}></img> bs: {components.company.bs}</li>
           </ul>
         </div>
       </div>

@@ -12,7 +12,7 @@
     align-items:center;
     height:90px;
     width:90px;
-    background-color:rgb(65, 61, 61);
+    background-color:rgb(43, 40, 40);
     border-radius:15px;
     color:white;
     font-size:30px;
@@ -73,6 +73,7 @@ box-shadow:10px 10px 50px rgba(0, 0, 0, 0.288);
     font-size:14px;
     flex-direction:column;
     color:rgb(100, 100, 92);
+    margin-left:40px;
 }
 #head button{
 width:90px;
@@ -99,9 +100,7 @@ gap:20px;
 
 }
 
-#sec_2{
-    display:
-}
+
 .svg{
     width:13px;
     height:13px;
@@ -109,8 +108,10 @@ gap:20px;
 
 .head_text{
     color:rgb(100, 100, 92);
-    
-    padding:7px;
+    padding:5px;
+    margin:10px;
+    display:flex;
+    flex-flow:wrap row;
 }
 
 
@@ -128,28 +129,52 @@ gap:20px;
 
 #input{
     
-    color:white;
-    background-color: rgb(100, 100, 92);
+    color:rgba(255, 255, 255, 1);
+    background-color: rgb(49, 49, 45);
     border:none;
-    width:336px;
-    height:40px;
+    width:315px;
+    height:30px;
     border-radius:5px;
-    padding:8px;
-    font-size:12px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:16px;
+    resize:none;
+    caret-color: rgb(24, 23, 23);
+    
+
+    
+    
 }
+#input:after{
+float:right;
+width:20px;
+height:20px;
+padding-bottom:5px;
+content:url("./svg/check_mark.svg");
+transition:all 0.5s;
+}
+
+#input:focus:after{
+   transform:rotate(180deg)
+    
+    }
 
 .styled_checkboxes{
  
 
- 
-
-    padding:5px;
-    width:323px;
-    height:35px;
+    list-style:none;
+    margin:0;
+    padding:0px;
+    display:flex;
+    align-items:center;
+    padding:7px;
+    
+    
     color:white;
-    background-color: rgb(100, 100, 92);
-    margin:1px;
-    border-radius:5px;
+
+   
+   
    font-size:12px;
    font-weight: bold;
 }
@@ -157,13 +182,15 @@ gap:20px;
  
 height:20px;
 width:20px;
-border-radius:50%;
-cursor:pointer;
 
+cursor:pointer;
+clip-path:circle(55%)
 }
 
+
 .styled_checkboxes:hover{
-    background-color:rgb(100, 100, 92);
+    background-color:rgb(114, 114, 109);
+    border-radius:10px;
 }
 
 #input:focus{
@@ -171,11 +198,19 @@ border:none;
 outline:none;
 }
 #checkbox_container{
-
-
-
+    
+    width:333px;
+    border-radius:10px;
     margin-top:8px;
+    margin-left:0px;
+    padding:0px;
+    background-color: rgb(100, 100, 92);
 }
+
+ul:last-child{
+border-radius:30px;
+}
+
 
 #hidden_option{
     display:none;
@@ -191,5 +226,55 @@ outline:none;
 }
 
 #name_list{
+    display:flex;
+    align-items: center;
+    flex-flow:row wrap;
     color:white;
 }
+
+.flex_wrap{
+    display:flex;
+    flex-flow:row wrap;
+}
+.elem_list::after{
+    content:"\00a0"
+}
+
+
+#label{
+    margin:0px;
+    padding:0px;
+}
+
+[contentEditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
+    color:rgb(114, 114, 109);
+    
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+ 
+   
+    border: none;
+   
+    background-color: white;
+  }
+  input[type="checkbox"]::before {
+   
+    width: 1.4rem;
+    height: 1.4rem;
+    clip-path: circle(55%);
+
+    
+  }
+
+  input[type="checkbox"]:checked::before {
+    content: url("./svg/checkmark.svg");
+  }
+  
+  
